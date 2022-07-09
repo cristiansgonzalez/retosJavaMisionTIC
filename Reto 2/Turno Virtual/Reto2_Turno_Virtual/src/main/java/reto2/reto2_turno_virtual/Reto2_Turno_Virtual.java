@@ -35,23 +35,23 @@ public class Reto2_Turno_Virtual {
         
         informacion(turnoVirtual1);
         
-        turnoVirtual1.cambiarestadoTurno();
+        turnoVirtual1.cambiarEstadoTurno();
         turnoVirtual1.atenderProximoTurno();
-        turnoVirtual1.cambiarestadoTurno();
+        turnoVirtual1.cambiarEstadoTurno();
         
         informacion(turnoVirtual1);
     }
     
     public static void informacion(TurnoVirtual turnoVirtual1){
         
-        for(int i = 0; i < turnoVirtual1.getTurnos().length; i++){
-            System.out.print(turnoVirtual1.getTurnos()[i] + ", ");
+        for(String turno : turnoVirtual1.getTurnos()){
+            System.out.print(turno + ", ");
         }
         
         System.out.println("");
         
-        for(int i = 0; i < turnoVirtual1.getTurnosPerdidos().length; i++){
-            System.out.print(turnoVirtual1.getTurnosPerdidos()[i] + ", ");
+        for(String perdido : turnoVirtual1.getTurnosPerdidos()){
+            System.out.print(perdido + ", ");
         }
         System.out.println("");
         System.out.println(turnoVirtual1.isEstadoTurnoVirtual());

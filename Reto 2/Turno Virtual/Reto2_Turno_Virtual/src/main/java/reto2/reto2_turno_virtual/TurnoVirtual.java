@@ -91,7 +91,7 @@ public class TurnoVirtual {
         }
     }  
     
-    public void cambiarestadoTurno(){
+    public void cambiarEstadoTurno(){
         estadoTurnoVirtual = !estadoTurnoVirtual;
     }
 }

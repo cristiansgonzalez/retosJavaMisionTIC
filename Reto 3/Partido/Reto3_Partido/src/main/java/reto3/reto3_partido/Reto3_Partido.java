@@ -12,10 +12,11 @@ public class Reto3_Partido {
 
     public static void main(String[] args) {
         
-        Preferencial tiq_perf1 = new Preferencial("0123","Juan Perez", "CL 01 CR 02-03");
+        Preferencial tiq_perf1 = new Preferencial("1180","Gldis Elena Caro Quiceno", "CL 136 SUR CR 46-08");
         VIP tiq_vip1 = new VIP("5434", "Maria Lopez", "CR 29 CL 28-27");
        
         informacion(tiq_perf1);
+        /*
         informacion(tiq_vip1);
         
         tiq_perf1.participaSorteo();
@@ -37,6 +38,7 @@ public class Reto3_Partido {
         
         tiq_perf1.setDireccionResidencia("CL 04 CR 05-06");
         informacion(tiq_perf1);
+*/
     }
     
     public static void informacion(Preferencial tiq_perf1){
